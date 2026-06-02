@@ -12,7 +12,7 @@ screenGui.Parent = playerGui
 -- Основной фрейм
 local mainFrame = Instance.new("Frame")
 mainFrame.Name = "MainFrame"
-mainFrame.Size = UDim2.new(0, 300, 0, 200)
+mainFrame.Size = UDim2.new(0, 700, 0, 200)
 mainFrame.Position = UDim2.new(0.5, -150, 0.5, -100)
 mainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 40)
 mainFrame.BorderSizePixel = 0
