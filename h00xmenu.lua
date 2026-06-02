@@ -28,29 +28,6 @@ titleBar.BackgroundColor3 = Color3.fromRGB(25, 25, 30)
 titleBar.BorderSizePixel = 0
 titleBar.Parent = mainFrame
 
-local titleLabel = Instance.new("TextLabel")
-titleLabel.Size = UDim2.new(1, -40, 1, 0)
-titleLabel.Position = UDim2.new(0, 10, 0, 0)
-titleLabel.BackgroundTransparency = 1
-titleLabel.Text = "H00xmenu(1.0)"
-titleLabel.TextColor3 = Color3.new(1, 1, 1)
-titleLabel.Font = Enum.Font.SourceSansBold
-titleLabel.TextSize = 16
-titleLabel.TextXAlignment = Enum.TextXAlignment.Left
-titleLabel.Parent = titleBar
-
-local closeButton = Instance.new("TextButton")
-closeButton.Size = UDim2.new(0, 30, 0, 30)
-closeButton.Position = UDim2.new(1, -30, 0, 0)
-closeButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
-closeButton.BorderSizePixel = 0
-closeButton.Text = "X"
-closeButton.TextColor3 = Color3.new(1, 1, 1)
-closeButton.Font = Enum.Font.SourceSansBold
-closeButton.TextSize = 18
-closeButton.Parent = titleBar
-closeButton.MouseButton1Click:Connect(function()
-	screenGui:Destroy()
 end)
 
 -- Содержимое окна
@@ -71,7 +48,6 @@ submitButton.Font = Enum.Font.SourceSansBold
 submitButton.TextSize = 14
 submitButton.Parent = contentFrame
 submitButton.MouseButton1Click:Connect(function()
-	print("Введено:", inputField.Text)
 	-- Здесь может быть вызов RemoteEvent или HttpService
 end)
 
