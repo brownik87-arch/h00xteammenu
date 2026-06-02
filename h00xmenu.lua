@@ -36,19 +36,6 @@ contentFrame.Size = UDim2.new(1, -20, 1, -40)
 contentFrame.Position = UDim2.new(0, 10, 0, 35)
 contentFrame.BackgroundTransparency = 1
 contentFrame.Parent = mainFrame
-
-local submitButton = Instance.new("TextButton")
-submitButton.Size = UDim2.new(1, 0, 0, 30)
-submitButton.Position = UDim2.new(0, 0, 0, 70)
-submitButton.BackgroundColor3 = Color3.fromRGB(70, 130, 200)
-submitButton.BorderSizePixel = 0
-submitButton.Text = "Main"
-submitButton.TextColor3 = Color3.new(1, 1, 1)
-submitButton.Font = Enum.Font.SourceSansBold
-submitButton.TextSize = 14
-submitButton.Parent = contentFrame
-submitButton.MouseButton1Click:Connect(function()
-	-- Здесь может быть вызов RemoteEvent или HttpService
 end)
 
 -- ====== Реализация перетаскивания ======
